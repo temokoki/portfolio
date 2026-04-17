@@ -14,6 +14,7 @@ const modalLightbox = document.getElementById("modal-lightbox");
 const yearEl = document.getElementById("year");
 
 let lightboxStep = null;
+let projects = []; // Global projects array
 
 yearEl.textContent = String(new Date().getFullYear());
 
@@ -66,7 +67,7 @@ function renderProjectLinks(project) {
   }
 }
 
-function setModalState(open) {
+function setModalState(open, projectId = null) {
   modalOverlay.dataset.state = open ? "open" : "closed";
   modalOverlay.classList.toggle("hidden", !open);
   document.body.classList.toggle("modal-open", open);
@@ -76,6 +77,8 @@ function setModalState(open) {
     lightboxStep = null;
     modalLightbox.innerHTML = "";
     modalLightbox.hidden = true;
+    // Remove project from URL hash when closing
+    window.location.hash = '';
   }
 }
 
@@ -356,9 +359,13 @@ function openProject(project, triggerEl) {
 
   populateModalLightbox(project);
   setModalState(true);
+
+  // Update URL hash with project ID
+  window.location.hash = project.id;
 }
 
-function renderGallery(projects) {
+function renderGallery(projectsData) {
+  projects = projectsData; // Store globally
   galleryGrid.innerHTML = "";
 
   projects.forEach((project) => {
@@ -404,12 +411,22 @@ async function loadProjects() {
     const res = await fetch("projects.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    const projects = Array.isArray(data.projects) ? data.projects : [];
-    if (projects.length === 0) {
+    const projectsData = Array.isArray(data.projects) ? data.projects : [];
+    if (projectsData.length === 0) {
       galleryLoading.textContent = "No projects configured yet.";
       return;
     }
-    renderGallery(projects);
+    renderGallery(projectsData);
+
+    // Check for project in URL hash
+    const hash = window.location.hash.substring(1); // Remove #
+    const projectId = hash.split('/')[0];
+    if (projectId) {
+      const project = projects.find(p => p.id === projectId);
+      if (project) {
+        openProject(project);
+      }
+    }
   } catch (e) {
     galleryLoading.classList.add("hidden");
     galleryError.classList.remove("hidden");
@@ -440,6 +457,20 @@ document.addEventListener("keydown", (e) => {
     if (tag === "INPUT" || tag === "TEXTAREA") return;
     e.preventDefault();
     lightboxStep(e.key === "ArrowLeft" ? -1 : 1);
+  }
+});
+
+// Handle hash changes
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash.substring(1);
+  const projectId = hash.split('/')[0];
+  if (projectId) {
+    const project = projects.find(p => p.id === projectId);
+    if (project) {
+      openProject(project);
+    }
+  } else {
+    setModalState(false);
   }
 });
 
