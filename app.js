@@ -15,6 +15,7 @@ const yearEl = document.getElementById("year");
 
 let lightboxStep = null;
 let projects = []; // Global projects array
+let currentProjectId = null;
 
 yearEl.textContent = String(new Date().getFullYear());
 
@@ -77,9 +78,13 @@ function setModalState(open, projectId = null) {
     lightboxStep = null;
     modalLightbox.innerHTML = "";
     modalLightbox.hidden = true;
-    // Remove project from URL hash when closing
-    window.location.hash = '';
+    currentProjectId = null;
+    // Remove project hash without triggering scroll jumps.
+    if (window.location.hash) history.replaceState(null, "", window.location.pathname + window.location.search);
+    return;
   }
+
+  currentProjectId = projectId;
 }
 
 function stopModalMedia() {
@@ -179,9 +184,6 @@ function mountLazyVideo(wrapper, { src, autoplay = false }) {
   requestAnimationFrame(() => {
     video.src = src;
     video.load();
-    if (autoplay) {
-      video.play().catch(() => { });
-    }
   });
 }
 
@@ -343,7 +345,7 @@ function populateModalLightbox(project) {
   select(0, { fromOpen: true });
 }
 
-function openProject(project, triggerEl) {
+function openProject(project, { syncHistory = true } = {}) {
   modalTitle.textContent = project.title;
   modalDescription.innerHTML = project.longDescription;
 
@@ -358,10 +360,34 @@ function openProject(project, triggerEl) {
   renderProjectLinks(project);
 
   populateModalLightbox(project);
-  setModalState(true);
+  setModalState(true, project.id);
 
-  // Update URL hash with project ID
-  window.location.hash = project.id;
+  // Keep URL shareable while avoiding duplicate-open side effects.
+  if (!syncHistory) return;
+  const nextHash = `#${project.id}`;
+  if (window.location.hash !== nextHash) {
+    history.pushState(null, "", nextHash);
+  }
+}
+
+function syncModalWithLocation() {
+  const hash = window.location.hash.substring(1);
+  const projectId = hash.split("/")[0];
+
+  if (!projectId) {
+    if (modalOverlay.dataset.state === "open") {
+      setModalState(false);
+    }
+    return;
+  }
+
+  if (modalOverlay.dataset.state === "open" && currentProjectId === projectId) {
+    return;
+  }
+  const project = projects.find((p) => p.id === projectId);
+  if (project) {
+    openProject(project, { syncHistory: false });
+  }
 }
 
 function renderGallery(projectsData) {
@@ -398,7 +424,7 @@ function renderGallery(projectsData) {
     body.append(title, desc);
     btn.append(thumbWrap, body);
 
-    btn.addEventListener("click", () => openProject(project, btn));
+    btn.addEventListener("click", () => openProject(project));
     galleryGrid.appendChild(btn);
   });
 
@@ -417,16 +443,7 @@ async function loadProjects() {
       return;
     }
     renderGallery(projectsData);
-
-    // Check for project in URL hash
-    const hash = window.location.hash.substring(1); // Remove #
-    const projectId = hash.split('/')[0];
-    if (projectId) {
-      const project = projects.find(p => p.id === projectId);
-      if (project) {
-        openProject(project);
-      }
-    }
+    syncModalWithLocation();
   } catch (e) {
     galleryLoading.classList.add("hidden");
     galleryError.classList.remove("hidden");
@@ -460,18 +477,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Handle hash changes
-window.addEventListener('hashchange', () => {
-  const hash = window.location.hash.substring(1);
-  const projectId = hash.split('/')[0];
-  if (projectId) {
-    const project = projects.find(p => p.id === projectId);
-    if (project) {
-      openProject(project);
-    }
-  } else {
-    setModalState(false);
-  }
-});
+window.addEventListener("hashchange", syncModalWithLocation);
 
 loadProjects();
