@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Interactive apps & games developer portfolio showcasing Web3, blockchain, multiplayer, and immersive demos by Temo Kokiashvili." />
+  <meta name="author" content="Temo Kokiashvili" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Temo Kokiashvili — Portfolio" />
+  <meta property="og:description" content="Interactive apps & games developer portfolio showcasing Web3, blockchain, multiplayer, and immersive demos by Temo Kokiashvili." />
+  <meta property="og:url" content="https://temokoki.github.io/" />
+  <meta property="og:image" content="https://temokoki.github.io/thumbnail.webp" />
+  <meta property="og:image:alt" content="Temo Kokiashvili portfolio preview" />
+  <title>Temo Kokiashvili — Portfolio</title>
+  <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <img class="site-header__photo" src="/photo.webp" alt="Temo Kokiashvili" width="112" height="112"
+        fetchpriority="high" />
+      <div class="site-header__text">
+        <h1 class="site-title">Temo Kokiashvili</h1>
+        <p class="site-tagline">
+          Interactive apps &amp; games developer
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main id="gallery" class="gallery">
+    <p class="gallery__loading" id="gallery-loading">Loading projects…</p>
+    <p class="gallery__error hidden" id="gallery-error" role="alert"></p>
+    <div class="gallery__grid" id="gallery-grid" hidden></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Temo Kokiashvili</p>
+  </footer>
+
+  <div class="modal-overlay hidden" id="modal-overlay" data-state="closed">
+    <div class="modal" id="modal">
+      <button type="button" class="modal__close" id="modal-close">×</button>
+      <div class="modal__scroller">
+        <div id="modal-lightbox" class="modal-lightbox" hidden></div>
+        <h2 class="modal__title" id="modal-title"></h2>
+        <div class="modal__description" id="modal-description"></div>
+        <section class="modal__section modal__section--contribution" id="modal-contribution" hidden>
+          <h3 class="modal__section-title" id="modal-role-heading">
+            My contribution
+          </h3>
+          <div class="modal__body modal__body--role" id="modal-role"></div>
+        </section>
+        <section class="modal__section modal__section--links" id="modal-links" hidden>
+          <ul class="modal__links-list" id="modal-links-list"></ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>

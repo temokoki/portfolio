@@ -1,0 +1,627 @@
+{
+  "projects": [
+    {
+      "id": "wle-jolt",
+      "thumbnail": "./wle-jolt/img1.webp",
+      "title": "WLE-Jolt Physics",
+      "shortDescription": "Multithreaded Jolt physics for WLE",
+      "longDescription": "I integrated multithreaded Jolt physics into the Wonderland Engine and created a playful demo scene to showcase and stress-test the system. The demo allows you to spawn objects, apply forces, and experiment with soft-body parameters.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./wle-jolt/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./wle-jolt/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./wle-jolt/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./wle-jolt/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./wle-jolt/img4.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://www.viverse.com/fBBSKkY"
+        }
+      ]
+    },
+    {
+      "id": "cmhunt",
+      "thumbnail": "./cmhunt/img1.webp",
+      "title": "CMHunt",
+      "shortDescription": "Web3 real-time multiplayer P2E game",
+      "longDescription": "Pushing the boundaries of Web3, I developed a world's 1st fully-onchain, real-time multiplayer P2E game.<br>By leveraging the unique capabilities of the IC blockchain, I eliminated off-chain dependencies and centralized points of failure. Every interaction and reward discovery is executed directly on IC blockchain.<br>To ensure fairness and security, I also implemented a cryptographically secure pseudorandom number generator using the ChaCha algorithm, guaranteeing random and tamper‑proof reward placement.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./cmhunt/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./cmhunt/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://cmhunt.xyz"
+        },
+        {
+          "type": "x",
+          "url": "https://x.com/CMHunt_Game"
+        }
+      ]
+    },
+    {
+      "id": "dgself",
+      "thumbnail": "./dgself/img1.webp",
+      "title": "DGSelf",
+      "shortDescription": "Web3 interoperable 3D avatar platform",
+      "longDescription": "DGSelf is a decentralized identity platform I built on the IC blockchain to eliminate reliance on centralized storage. By utilizing the Internet Computer’s ability to serve web content directly from smart contracts, the front-end, back-end, avatar assets, and NFT metadata are 100% unified within Canister smart contracts. This architecture ensures permanent ownership, interoperability, and a tamper-proof user experience.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./dgself/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./dgself/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://dgself.com"
+        },
+        {
+          "type": "x",
+          "url": "https://x.com/DG_Self"
+        }
+      ]
+    },
+    {
+      "id": "icp-savior",
+      "thumbnail": "./icp-savior/img6.webp",
+      "title": "ICP Savior",
+      "shortDescription": "Gamified blockchain learning",
+      "longDescription": "ICP Savior is a stunning 3D mini-game I developed to transform blockchain education into an immersive gameplay experience. Players navigate the vibrant stylized environment to defeat 'Centralization Trolls' and liberate the captive ICP character, unlocking key concepts of the IC blockchain along the journey.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./icp-savior/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./icp-savior/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://icpsavior.com"
+        }
+      ]
+    },
+    {
+      "id": "obsidian-tears",
+      "thumbnail": "./obsidian-tears/thumbnail.webp",
+      "title": "Obsidian Tears",
+      "shortDescription": "Web3 fantasy RPG adventure",
+      "longDescription": "A fully on-chain 2D RPG adventure on the Internet Computer, where all characters and items are NFTs player truly owns, with every asset and transaction stored entirely on-chain.",
+      "myRole": "Joined late-stage development to resolve critical release-blocking bugs, and built custom tools to improve overall game performance and streamline designer workflows.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./obsidian-tears/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./obsidian-tears/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./obsidian-tears/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./obsidian-tears/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./obsidian-tears/img4.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "x",
+          "url": "https://x.com/obsidian__tears"
+        }
+      ]
+    },
+    {
+      "id": "carmania",
+      "thumbnail": "./carmania/img1.webp",
+      "title": "Carmania",
+      "shortDescription": "Web3 racing with NFT-customized cars",
+      "longDescription": "Carmania is a racing and drifting game I developed, where players build and fully customize their cars using NFT items. Each item is owned by the player and can be traded, collected, and used in competitive races.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=KM5Fc-OjTxU"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./carmania/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://3tnyu-iiaaa-aaaal-aczcq-cai.raw.icp0.io/"
+        }
+      ]
+    },
+    {
+      "id": "skate-life",
+      "thumbnail": "./skate-life/img1.webp",
+      "title": "Skate Life",
+      "shortDescription": "Loot-driven skateboarding game",
+      "longDescription": "Skate Life is a fun and exciting skateboarding game that goes beyond tricks—it’s a loot-driven experience where players collect rare decks, trucks, and wheels, and craft them into legendary skateboards.",
+      "myRole": "Worked as a senior developer from early development, contributing across nearly all core systems. Implemented core gameplay features including movement and grinding mechanics, trick combo and scoring systems, avatar customization, skateboard crafting, save/load functionality, and full game UI.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=CmcsV7QYJeo"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./skate-life/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://play.google.com/store/apps/details?id=com.ds.grind"
+        }
+      ]
+    },
+    {
+      "id": "bmx-game",
+      "thumbnail": "./bmx-game/img5.webp",
+      "title": "BMX Game",
+      "shortDescription": "Side-Scroller BMX Prototype",
+      "longDescription": "This is a side-scroller BMX riding prototype I developed as a proof of concept. It features bike and avatar customization with interchangeable parts, colors, clothing, and accessories. Core gameplay includes surface grinding, aerial trick systems, physics-based ragdoll crashes, a fully functional UI, and a challenge system with level-specific objectives including score targets and specific trick/combo challenges.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./bmx-game/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./bmx-game/img6.webp"
+        }
+      ]
+    },
+    {
+      "id": "battleflare",
+      "thumbnail": "./battleflare/thumbnail.webp",
+      "title": "Battleflare",
+      "shortDescription": "A fast-paced RPG Fighting Game",
+      "longDescription": "Join the battle royale and fight your way through powerful enemies and epic boss fights. Collect and equip rare weapons and armor, choose from six unique classes, and train your hero to unlock new combat skills.",
+      "myRole": "Joined mid-development to expand gameplay systems and improve performance. Implemented a Skill Tree system and refined inventory to auto-equip stronger items from existing ones. Led performance optimization across the project, improving mobile performance by ~10 FPS to a stable 60 FPS.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=7f8zgrNncUI"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./battleflare/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://apkpure.com/battle-flare-fighting-rpg/com.MoustacheBanana.BattleFlare"
+        }
+      ]
+    },
+    {
+      "id": "tk-parkour",
+      "thumbnail": "./tk-parkour/thumbnail.webp",
+      "title": "Parkour MMO",
+      "shortDescription": "Real-time multiplayer parkour game",
+      "longDescription": "This is a fully functional prototype I developed in Unity using Photon multiplayer services. It features an open-world environment where players can freely explore, communicate, and engage in fast-paced parkour racing challenges against each other. Designed as a proof-of-concept, it focuses on fluid freerunning movement, competitive gameplay, and social interaction in a shared world.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=uTaH7558bIo"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./tk-parkour/img6.webp"
+        }
+      ]
+    },
+    {
+      "id": "mech-battles",
+      "thumbnail": "./mech-battles/thumbnail.webp",
+      "title": "Mech Battles",
+      "shortDescription": "Immersive gaming experience",
+      "longDescription": "Mech Battles is a real-time multiplayer experience that pushes interactive entertainment forward with an immersive game theater concept. Players pilot fully customizable mech warriors across dynamic arenas, each equipped with modular weapon systems, defensive upgrades, and mobility enhancements, allowing players to tailor their machines to different combat styles.",
+      "myRole": "Joined mid-development to expand gameplay systems and core mechanics. Worked on mech movement/navigation, combat systems, and multiplayer synchronization. Implemented diverse weapons and unique mech abilities, enhancing gameplay depth and player experience.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=U4j7OO-sUTQ"
+        }
+      ]
+    },
+    {
+      "id": "spate",
+      "thumbnail": "./spate/thumbnail.webp",
+      "title": "Spate",
+      "shortDescription": "A surreal emotional journey",
+      "longDescription": "Spate is a surreal experience set in a world that seeks to draw the player into its reality. Spate is a dark, brooding, and beautifully crafted emotional journey that is seen through the eyes of a struggling addict.",
+      "myRole": "As the sole programmer, I developed all core game mechanics, including character controls and animation, dialogue systems, physics-based mechanics, VFX/SFX, UI, save/load systems, and overall game logic.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=dQqhyV-VKfU"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./spate/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "website",
+          "url": "https://store.steampowered.com/app/269810/Spate/"
+        }
+      ]
+    },
+    {
+      "id": "magic-crystals",
+      "thumbnail": "./magic-crystals/thumbnail.webp",
+      "title": "Magic Crystals",
+      "shortDescription": "Physics-driven 3D merging game",
+      "longDescription": "Developed hypercasual mobile game, which reimagines a classic brainteaser in 3D. Features visually pleasing environment and physics-based gameplay, where crystals collide, bounce and merge satisfyingly.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/watch?v=ydm8kOXpCxs"
+        },
+        {
+          "type": "image",
+          "src": "./magic-crystals/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./magic-crystals/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./magic-crystals/img3.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://apkpure.com/magic-crystals-2048-3d-merge/com.TurboBrainsInteractive.MagicCrystals"
+        }
+      ]
+    },
+    {
+      "id": "gun-man-run",
+      "thumbnail": "./gun-man-run/thumbnail.webp",
+      "title": "Gun Man Run",
+      "shortDescription": "Hypercasual runner-shooter game",
+      "longDescription": "Developed hypercasual mobile game where players progress through dynamic levels by shooting enemies, collecting rewards, and merging owned weapons to upgrade them and increase combat power.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./gun-man-run/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./gun-man-run/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://apkpure.com/gun-man-run/com.TurboBrainsInteractive.GunManRun"
+        }
+      ]
+    },
+    {
+      "id": "snowplow",
+      "thumbnail": "./snowplow/img4.webp",
+      "title": "Snowplow",
+      "shortDescription": "Clear the path, save the day!",
+      "longDescription": "Developed a satisfying hypercasual game where player controls a snowplow truck to clear snowy streets. Progress from small towns to massive airports while performing various duties such as rescuing stranded dogs, clearing paths for vehicles, and loading supplies onto airplanes. Upgrade your truck and unlock new vehicles in a simple, engaging experience.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./snowplow/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./snowplow/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./snowplow/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./snowplow/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./snowplow/img4.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://apkpure.com/snow-plow-3d/com.ds.snowplow"
+        }
+      ]
+    },
+    {
+      "id": "trench-rush",
+      "thumbnail": "./trench-rush/img6.webp",
+      "title": "Trench Rush",
+      "shortDescription": "Clear the trenches, destroy enemy base!",
+      "longDescription": "Developed a hypercasual action game where players control an army platoon and maneuver it through hostile trenches to reach and destroy the enemy base. Navigate combat encounters, avoid hazards, and overcome enemy defenses as difficulty increases across progressively challenging levels.",
+      "media": [
+        {
+          "type": "video",
+          "src": "./trench-rush/video.mp4"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img1.webp"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img2.webp"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img3.webp"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img4.webp"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img5.webp"
+        },
+        {
+          "type": "image",
+          "src": "./trench-rush/img6.webp"
+        }
+      ],
+      "links": [
+        {
+          "type": "playstore",
+          "url": "https://apkpure.com/trench-rush/com.ds.trenchrush"
+        }
+      ]
+    }
+  ]
+}
